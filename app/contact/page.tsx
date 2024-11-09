@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-//
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -10,7 +9,6 @@ const Contact = () => {
     message: "",
   });
 
-  // Handle input change
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -18,15 +16,13 @@ const Contact = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission logic
     console.log("Form submitted:", formData);
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-700">
+    <div className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-800 to-gray-700 p-4 sm:p-8">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
@@ -40,16 +36,16 @@ const Contact = () => {
         <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-3xl px-6 py-12 bg-opacity-90 bg-transparent backdrop-blur-md rounded-lg shadow-2xl">
+      <div className="relative z-10 w-full max-w-lg sm:max-w-2xl md:max-w-3xl px-4 py-8 sm:px-6 md:py-12 bg-opacity-90 bg-transparent backdrop-blur-md rounded-lg shadow-2xl">
         <h2
-          className="text-5xl text-center font-bold text-white mb-8"
+          className="text-3xl sm:text-4xl md:text-5xl text-center font-bold text-white mb-6 md:mb-8"
           style={{ fontFamily: "inter, sans-serif" }}
         >
           Get In Touch
         </h2>
 
         <p
-          className="text-center text-lg text-white mb-12 font-bold"
+          className="text-center text-base sm:text-lg text-white mb-8 sm:mb-12 font-bold"
           style={{ fontFamily: "lusitana, sans-serif" }}
         >
           Whether you want to collaborate on a project or just say hi, feel free
@@ -57,7 +53,7 @@ const Contact = () => {
         </p>
 
         {/* Contact Form */}
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
           <div className="relative">
             <label htmlFor="name" className="sr-only font-bold">
               Name
@@ -101,7 +97,7 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               placeholder="Your Message"
-              className="w-full px-4 py-3 bg-transparent border border-pink-600             rounded-lg text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-300"
+              className="w-full px-4 py-3 bg-transparent border border-pink-600 rounded-lg text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-pink-600 transition duration-300"
               required
             />
           </div>
@@ -109,7 +105,7 @@ const Contact = () => {
           <div>
             <button
               type="submit"
-              className="w-full py-3 px-6 bg-pink-600 text-white font-bold rounded-xl shadow-md hover:bg-fushia-600 transition duration-300 ease-in-out"
+              className="w-full py-3 px-6 bg-pink-600 text-white font-bold rounded-xl shadow-md hover:bg-fuchsia-600 transition duration-300 ease-in-out"
             >
               Send Message
             </button>
