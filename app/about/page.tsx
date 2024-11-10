@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="relative min-h-screen max-w-full">
       {/* Background Image and Overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 ">
         <Image
           src="/about-image.png"
           alt="Beautiful technology mobile background"
@@ -21,9 +21,9 @@ const About = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative container mx-auto px-4 py-12 sm:py-20 md:py-24 lg:py-32 z-20 p-2 ">
+      <div className="relative container mx-auto px-4 py-40 sm:py-44 md:py-24 lg:py-32 z-20 p-2 ">
         {/* Title */}
-        <h2 className="text-center mb-8 text-4xl sm:text-5xl md:text-6xl font-bold text-fuchsia-600">
+        <h2 className="text-center mb-8 text-4xl sm:text-5xl sm:py-28 md:text-6xl font-bold text-fuchsia-600">
           About Me
         </h2>
 
