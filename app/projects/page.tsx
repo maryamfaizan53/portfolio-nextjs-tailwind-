@@ -6,10 +6,34 @@ import Link from "next/link";
 
 const Projects = () => {
   const projects = [
+        {
+      title: "Clothing Website",
+      description:
+        "A fully responsive clothing website built with Next.js and Tailwind CSS with sanity and stripe.",
+      techStack: ["Next.js", "TypeScript", "Tailwind CSS" , "Sanity" , "stripe"],
+      image: "/rr.png",
+      link: "https://rainbow-rattle.vercel.app/",
+    },
+        {
+      title: "Furniture Website",
+      description:
+         "A fully responsive clothing website built with Next.js and Tailwind CSS with sanity and stripe.",
+     techStack: ["Next.js", "TypeScript", "Tailwind CSS" , "Sanity" , "stripe"],
+      image: "/rr.png",
+      link: "https://rainbow-rattle.vercel.app/",
+    },
+        {
+      title: "Admin dashboard",
+      description:
+       "A fully responsive clothing website built with Next.js and Tailwind CSS with sanity and stripe.",
+     techStack: ["Next.js", "TypeScript", "Tailwind CSS" , "Sanity" , "stripe", "MongoDb"],
+      image: "/rr.png",
+      link: "https://rainbow-rattle.vercel.app/",
+    },
     {
       title: "Rainbow Rattle Toy Website",
       description:
-        "A fully responsive countdown timer built with Next.js and Tailwind CSS.",
+        "A fully responsive website built with Next.js and Tailwind CSS.",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS"],
       image: "/rr.png",
       link: "https://rainbow-rattle.vercel.app/",
