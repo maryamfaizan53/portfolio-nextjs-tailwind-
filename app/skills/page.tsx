@@ -10,7 +10,10 @@ const skills = [
   { name: 'React.js', level: 'Expert' },
   { name: 'Next.js', level: 'Intermediate' },
   { name: 'Tailwind CSS', level: 'Expert' },
-  { name: 'Bootstrap', level: 'Expert' },
+  { name: 'Bootstrap', level: 'Expert' }, 
+  { name: 'Python', level: 'Expert' },
+  { name: 'CrewAi', level: 'Expert' },
+  { name: 'Generative-Ai', level: 'Expert' },
 ];
 
 const Skills = () => {
